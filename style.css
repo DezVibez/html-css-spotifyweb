@@ -1,29 +1,60 @@
-* {box-sizing: border-box;
-margin: 0;
-padding: 0;}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;}
+
+
 
 /*Utilities*/
 
-.container {
-    width: 1200px;
-    margin: 0 auto;
-}
+body {
+    background-color: aqua;
+    height: 100vh;}
+
 
 .flex {
     display: flex;
 }
 
-header {
-    background-color: aqua;
+
+
+.main-container {
+    background-color: rgb(255, 166, 0);
     width: 100vw;
+    height: 80vh;
+}
+
+nav {
+    display: inline-block;
+    height: 100%;
+    width: 20%;
+    background-color: rgb(255, 0, 0);
+    
 }
 
 main {
-    background-color: rgb(255, 166, 0);
-    width: 100vw;
+    display: inline-block;
+    height: 100%;
+    width: 80%;
+    background-color: blue;
 }
 
+header {
+    height: 10%;
+    width: 100%;
+    background-color: grey;
+}
+
+.main-content {
+    height: 90%;
+    width: 100%;
+    background-color: coral;
+    overflow: scroll;
+}
+
+
 footer {
-    background-color: rgb(255, 13, 0);
+    background-color: black;
     width: 100vw;
+    height: 20vh;
 }
