@@ -31,14 +31,16 @@ body {
 
 .contenuto-superiore {
     flex-grow: 1;
+    padding-bottom: 150px;
 }
 
 nav {
     width: 200px;
     background-color: black;
-    padding: 10px;
+    padding: 15px;
     color: white;
     flex-shrink: 0;
+    position: relative;
 }
 
 nav li {margin: 9px 0;}
@@ -46,6 +48,12 @@ nav ul {margin: 15px 0}
 
 .logo {width: 80%;
 }
+
+
+
+
+
+
 
 main {
     width: calc(100%-200px);
@@ -83,7 +91,6 @@ header span {
 .contenuto-main {
     width: 100%;
     padding: 20px;
-    padding-bottom: 130px;
 }
 
 .contenuto-main ul {justify-content: center;
@@ -99,6 +106,8 @@ header span {
 .card-container {
     flex-wrap: wrap;
 }
+
+.card {margin-bottom: 20px;}
 .contenuto-main .card {
     width: 200px;
     text-align: center;
@@ -124,3 +133,14 @@ footer {
     position: fixed;
     bottom: 0%;
 }
+
+.profilo {
+    color: white;
+    height: 20px;
+    position: absolute;
+    bottom: 132%;
+    left: 5%;}
+
+.profilo hr{margin: 10px 0;
+    border: 1px solid rgb(117,120,125);}
+
