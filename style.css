@@ -136,10 +136,12 @@ footer {
 
 .profilo {
     color: white;
-    height: 20px;
     position: absolute;
-    bottom: 132%;
-    left: 5%;}
+    bottom: 100%;
+    padding:15px;
+    left: 0%;
+    width: 200px;
+    background-color: black;}
 
 .profilo hr{margin: 10px 0;
     border: 1px solid rgb(117,120,125);}
