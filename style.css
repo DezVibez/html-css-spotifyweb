@@ -48,6 +48,10 @@ nav {
 nav i {font-size: 25px;
     margin-right: 10px;}
 
+/*Mobile responsivness, abbiamo un incolonnamento delle sole icone,
+ il resto va nascoto.*/
+
+
 @media screen and (max-width:576px){
     nav {width: 70px;
         display: flex;
@@ -61,17 +65,21 @@ nav i {font-size: 25px;
         flex-direction: column;}
     .mobile-only i {margin: 10px 0px;
     font-size: 24px;}
+    .mobile-only i:hover{filter: brightness(2);}
     .mobile-only img {width: 30%;}
     .profilo { width: 70px;}
     footer .profilo i {width: 100%;
     margin: 20px 0px;
     font-size: 24px;
     }
+    footer .profilo i:hover {filter: brightness(2);}
     .profilo h5, .profilo span, .profilo hr{display: none;}
 }
 
 nav li {margin: 9px 0;}
 nav ul {margin: 15px 0}
+
+nav li:hover {filter: brightness(2);}
 
 .logo {width: 80%;
 }
@@ -120,6 +128,17 @@ header span {
     padding: 20px;
 }
 
+.contenuto-main ul hr {
+    border-color: transparent;}
+
+
+
+.contenuto-main li:hover hr{ /*Hanno un effetto in hover*/
+    width: 30%;
+    margin: 5px auto;
+    border-color: rgb(173,255,46);}
+
+
 .contenuto-main ul {justify-content: center;
     text-transform: uppercase;
     flex-wrap: wrap;}
@@ -133,6 +152,9 @@ header span {
 .card-container {
     margin-top: 30px;
 }
+
+/*Desktop responsivness, non cambia quasi nulla ma i contenuti "card"
+devono wrappare */
 
 @media screen and (max-width:992px){
     .card-container {flex-wrap: wrap;}
