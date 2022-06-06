@@ -20,6 +20,8 @@ body {
     display: flex;
 }
 
+.none {display: none;}
+
 /*Creazione di due container principali per separare
  la sezione principale dal footer. */
 
@@ -31,16 +33,41 @@ body {
 
 .contenuto-superiore {
     flex-grow: 1;
-    padding-bottom: 150px;
+    padding-bottom: 120px;
 }
 
 nav {
     width: 200px;
     background-color: black;
     padding: 15px;
-    color: white;
+    color:rgb(113,113,113);
     flex-shrink: 0;
     position: relative;
+}
+
+nav i {font-size: 25px;
+    margin-right: 10px;}
+
+@media screen and (max-width:576px){
+    nav {width: 70px;
+        display: flex;
+        flex-direction: column;}
+    
+    nav li {display: none;}
+    nav h4 {display: none;}
+    nav img {display: none;}
+
+    .mobile-only {display:flex;
+        flex-direction: column;}
+    .mobile-only i {margin: 10px 0px;
+    font-size: 24px;}
+    .mobile-only img {width: 30%;}
+    .profilo { width: 70px;}
+    footer .profilo i {width: 100%;
+    margin: 20px 0px;
+    font-size: 24px;
+    }
+    .profilo h5, .profilo span, .profilo hr{display: none;}
 }
 
 nav li {margin: 9px 0;}
@@ -101,11 +128,17 @@ header span {
 }
 .contenuto-main h3 {
     color: white;
-    margin: 50px 0;
+    margin: 40px 0;
 }
 .card-container {
-    flex-wrap: wrap;
+    margin-top: 30px;
 }
+
+@media screen and (max-width:992px){
+    .card-container {flex-wrap: wrap;}
+}
+    
+
 
 .card {margin-bottom: 20px;}
 .contenuto-main .card {
@@ -127,7 +160,7 @@ header span {
 
 footer {
     background-color: rgb(40,40,40);
-    height: 150px;
+    height: 120px;
     width: 100%;
     flex-shrink: 0;
     position: fixed;
@@ -135,14 +168,20 @@ footer {
 }
 
 .profilo {
-    color: white;
+    color:rgb(113,113,113);
     position: absolute;
     bottom: 100%;
     padding:15px;
     left: 0%;
-    width: 200px;
     background-color: black;}
+
+.profilo i {font-size: 20px;
+margin: 0 5px}
 
 .profilo hr{margin: 10px 0;
     border: 1px solid rgb(117,120,125);}
+.profilo .nome{color: white;
+    font-weight: 700;
+}
+
 
