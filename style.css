@@ -52,6 +52,7 @@ main {
     flex-grow: 1;
     background-color:rgb(20,25,34);
     color: rgb(117,120,125);
+    overflow-y: scroll;
 }
 
 /*Header sticky bar*/
@@ -80,9 +81,9 @@ header span {
 /*Contenuto sotto l'header bar*/
 
 .contenuto-main {
-    overflow-y: auto;
     width: 100%;
     padding: 20px;
+    padding-bottom: 130px;
 }
 
 .contenuto-main ul {justify-content: center;
@@ -95,10 +96,20 @@ header span {
     color: white;
     margin: 50px 0;
 }
-.contenuto-main .card
-
+.card-container {
+    flex-wrap: wrap;
+}
+.contenuto-main .card {
+    width: 200px;
+    text-align: center;
+    margin-right: 15px;
+}
 .card img {
     width: 100%;
+}
+.card h4 {
+    color: white;
+    margin: 10px 0;
 }
 
 
