@@ -15,7 +15,6 @@ body {
     font-family:'Montserrat', sans-serif;
 }
 
-
 .flex {
     display: flex;
 }
@@ -77,18 +76,15 @@ nav i {font-size: 25px;
 }
 
 nav li {margin: 9px 0;}
-nav ul {margin: 15px 0}
+nav ul {margin: 20px 0}
 
 nav li:hover {filter: brightness(2);}
 
+nav h4 {text-transform: uppercase;
+    color: white;
+    margin: 20px 0}
 .logo {width: 80%;
 }
-
-
-
-
-
-
 
 main {
     width: calc(100%-200px);
@@ -120,6 +116,8 @@ header span {
     font-weight: 600;
     font-size: 14px;
 }
+
+header span:hover {font-size: 15px;}
 
 /*Contenuto sotto l'header bar*/
 
@@ -162,7 +160,10 @@ devono wrappare */
     
 
 
-.card {margin-bottom: 20px;}
+.card {margin-bottom: 20px;
+    margin-right: 10px;}
+
+.card:hover 
 .contenuto-main .card {
     width: 200px;
     text-align: center;
@@ -177,7 +178,6 @@ devono wrappare */
 }
 
 
-
 /*Footer*/
 
 footer {
@@ -188,6 +188,43 @@ footer {
     position: fixed;
     bottom: 0%;
 }
+
+/*Elementi dentro al footer*/
+
+.footer-container {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-container img {
+    height: 70px;
+}
+.brano-nome div {color: white;
+    font-weight: 700;}
+.brano-nome span {color: rgb(117,120,125);
+    font-weight: 600;}
+
+.icone-sx {
+    color: white;
+    font-size: 20px;
+} 
+
+.icone-sx span {margin: 0 10px;}
+
+.player
+
+.icone-player { justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 26px;}
+
+.icone-player i {margin: 0 10px}
+
+.icone-player span{
+    font-size: 36px;
+}
+
+/*Elemento relativo al footer*/
 
 .profilo {
     color:rgb(113,113,113);
