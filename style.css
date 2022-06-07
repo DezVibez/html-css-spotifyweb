@@ -7,6 +7,7 @@ ul {
     list-style-type: none;
 }
 
+img {max-width: 100%;}
 
 /*Utilities*/
 
@@ -47,33 +48,7 @@ nav {
 nav i {font-size: 25px;
     margin-right: 10px;}
 
-/*Mobile responsivness, abbiamo un incolonnamento delle sole icone,
- il resto va nascoto.*/
 
-
-@media screen and (max-width:576px){
-    nav {width: 70px;
-        display: flex;
-        flex-direction: column;}
-    
-    nav li {display: none;}
-    nav h4 {display: none;}
-    nav img {display: none;}
-
-    .mobile-only {display:flex;
-        flex-direction: column;}
-    .mobile-only i {margin: 10px 0px;
-    font-size: 24px;}
-    .mobile-only i:hover{filter: brightness(2);}
-    .mobile-only img {width: 30%;}
-    .profilo { width: 70px;}
-    footer .profilo i {width: 100%;
-    margin: 20px 0px;
-    font-size: 24px;
-    }
-    footer .profilo i:hover {filter: brightness(2);}
-    .profilo h5, .profilo span, .profilo hr{display: none;}
-}
 
 nav li {margin: 9px 0;}
 nav ul {margin: 20px 0}
@@ -131,7 +106,7 @@ header span:hover {font-size: 15px;}
 
 
 
-.contenuto-main li:hover hr{ /*Hanno un effetto in hover*/
+.contenuto-main li:active hr{ /*Hanno un effetto in hover*/
     width: 30%;
     margin: 5px auto;
     border-color: rgb(173,255,46);}
@@ -149,19 +124,14 @@ header span:hover {font-size: 15px;}
 }
 .card-container {
     margin-top: 30px;
+    flex-wrap: wrap;
 }
-
-/*Desktop responsivness, non cambia quasi nulla ma i contenuti "card"
-devono wrappare */
-
-@media screen and (max-width:992px){
-    .card-container {flex-wrap: wrap;}
-}
-    
-
 
 .card {margin-bottom: 20px;
-    margin-right: 10px;}
+    margin-right: 10px;
+    width: 15%;}
+
+/*Effetto in hover sulla card*/  
 
 .card:hover 
 .contenuto-main .card {
@@ -238,6 +208,29 @@ footer {
     height: 3px;
     margin: 20px 10px;}
 
+.dynamic-bar { height: 100%;
+    background-color: white;
+    width: 3%;
+    transition-property: width;
+    transition-duration: 30s;
+}
+
+.player span:active .dynamic-bar {
+    width: 100%;
+}
+
+.icone-dx  {align-items: center;}
+.icone-dx i {
+    color: white;
+    margin: 0 10px;
+}
+.mini-bar{
+    width: 100px;
+    background-color: rgb(117,120,125);
+    height: 2px;
+    margin: 0px 10px;
+}
+
 /*Elemento relativo al footer*/
 
 .profilo {
@@ -253,8 +246,54 @@ margin: 0 5px}
 
 .profilo hr{margin: 10px 0;
     border: 1px solid rgb(117,120,125);}
-.profilo .nome{color: white;
-    font-weight: 700;
+    .profilo .nome{color: white;
+        font-weight: 700;
+    }
+
+
+/*Desktop responsivness, non cambia quasi nulla ma i contenuti si ridimensionano*/
+    
+@media screen and (max-width:992px){
+    .card {width: 20%;}
+    }
+    
+    
+/*Tablet responsivness, voglio 4 card per riga max*/
+@media screen and (max-width:768px){
+    .card {width: 45%;}
+    .brano-nome img{display: none;}
+    .icone-sx {display: none;}
+    .mini-bar {display: none;}
+    }
+
+ /*Mobile responsivness, abbiamo un incolonnamento delle sole icone,
+il resto va nascoto.*/
+    
+ @media screen and (max-width:576px){
+    nav {width: 70px;
+        display: flex;
+        flex-direction: column;}
+    
+    nav li {display: none;}
+    nav h4 {display: none;}
+    nav img {display: none;}
+
+    .mobile-only {display:flex;
+        flex-direction: column;}
+    .mobile-only i {margin: 10px 0px;
+    font-size: 24px;}
+    .mobile-only i:hover{filter: brightness(2);}
+    .mobile-only img {width: 30%;}
+    .profilo { width: 70px;}
+    footer .profilo i {width: 100%;
+    margin: 20px 0px;
+    font-size: 24px;
+    }
+    footer .profilo i:hover {filter: brightness(2);}
+    .profilo h5, .profilo span, .profilo hr{display: none;}
+    .card {width: 80%;}
+    .brano-nome {display: none;}
+    .icone-dx {display: none;}
 }
 
 
