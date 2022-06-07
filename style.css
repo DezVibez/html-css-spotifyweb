@@ -103,7 +103,7 @@ header span:hover {font-size: 15px;}
     border-color: transparent;}
 
 
-
+.contenuto-main li {cursor: pointer;}
 .contenuto-main li:active hr{ /*Hanno un effetto in active*/
     width: 30%;
     margin: 5px auto;
@@ -230,7 +230,13 @@ footer {
 
 .dynamic-bar { height: 100%;
     background-color: white;
-    width: 3%;
+    width: 60%;
+    
+}
+
+.dynamic-bar:hover{
+    background-color: rgb(173,255,46);
+    height: 3px;
     transition-property: width;
     transition-duration: 30s;
 }
@@ -266,8 +272,8 @@ margin: 0 5px}
 
 .profilo hr{margin: 10px 0;
     border: 1px solid rgb(117,120,125);}
-    .profilo .nome{color: white;
-        font-weight: 700;
+.profilo .nome{color: white;
+    font-weight: 700;
     }
 
 
