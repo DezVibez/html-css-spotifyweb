@@ -12,7 +12,6 @@ img {max-width: 100%;}
 /*Utilities*/
 
 body {
-    background-color: aqua;
     font-family:'Montserrat', sans-serif;
 }
 
@@ -132,7 +131,7 @@ header span:hover {font-size: 15px;}
         width: 14%;}
 
 
-/*Effetto in hover sulla card*/  
+/*overlay in hover sulla card*/  
 
 .card:hover figure{transform: translate(0,-10px ) scale(1.05);
                 }
@@ -144,6 +143,20 @@ header span:hover {font-size: 15px;}
     bottom: 0;
     background-color: rgba(0,0,0, 0.5);
     position:absolute
+}
+
+/*Play btn in hover sulla card*/
+
+.card:hover figure::after{
+content:"\f04b";
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+font-size: 20px;
+position:absolute;
+font-family: "Font Awesome 5 Free"; 
+font-weight: 900; 
 }
 
 .contenuto-main .card {
@@ -259,11 +272,9 @@ margin: 0 5px}
 
 
 /*Desktop responsivness*/
-    
-@media screen and (max-width:992px){
+    @media screen and (max-width:992px){
     .card {width: 20%;}
     }
-    
     
 /*Tablet responsivness, voglio 4 card per riga max*/
 @media screen and (max-width:768px){
