@@ -194,11 +194,14 @@ footer {
 .footer-container {
     justify-content: space-around;
     align-items: center;
+    height: 100%;
 }
 
 .footer-container img {
     height: 70px;
+    margin-right: 10px;
 }
+.brano-nome {align-items: center;}
 .brano-nome div {color: white;
     font-weight: 700;}
 .brano-nome span {color: rgb(117,120,125);
@@ -213,7 +216,7 @@ footer {
 
 .player
 
-.icone-player { justify-content: space-around;
+.icone-player {justify-content: space-around;
     align-items: center;
     color: white;
     font-size: 26px;}
@@ -223,6 +226,17 @@ footer {
 .icone-player span{
     font-size: 36px;
 }
+
+.player-bar {justify-content: space-between;
+    align-items: center;}
+.player-bar span {color: white;
+    font-weight: 600;
+    font-size: 12px;
+}
+.bar {width: 320px;
+    background-color: rgb(117,120,125);
+    height: 3px;
+    margin: 20px 10px;}
 
 /*Elemento relativo al footer*/
 
